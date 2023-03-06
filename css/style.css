@@ -178,7 +178,7 @@ transform: rotate(180deg);
 .slider-navigation .nav-btn{
   width: 12px;
   height: 12px;
-  background: #fff;
+  background: black;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
@@ -209,84 +209,7 @@ transform: rotate(180deg);
   transition-property: clip-path;
 }
 
-@media (max-width: 1040px){
-  header{
-    padding: 12px 20px;
-  }
 
-  section{
-    padding: 100px 20px;
-  }
-
-  .home .media-icons{
-    right: 15px;
-  }
-
-  header .navigation{
-    display: none;
-  }
-
-  header .navigation.active{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(1, 1, 1, 0.5);
-  }
-
-  header .navigation .navigation-items a{
-    color: #222;
-    font-size: 1.2em;
-    margin: 20px;
-  }
-
-  header .navigation .navigation-items a:before{
-    background: #222;
-    height: 5px;
-  }
-
-  header .navigation.active .navigation-items{
-    background: #fff;
-    width: 600px;
-    max-width: 600px;
-    margin: 20px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-  }
-
-  .menu-btn{
-    background: url(menu.png)no-repeat;
-    background-size: 30px;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-
-  .menu-btn.active{
-    z-index: 999;
-    background: url(close.png)no-repeat;
-    background-size: 25px;
-    background-position: center;
-    transition: 0.3s ease;
-  }
-}
-
-@media (max-width: 560px){
-  .home .content h1{
-    font-size: 3em;
-    line-height: 60px;
-  }
-}
 
 
       /* About */
@@ -302,7 +225,7 @@ transform: rotate(180deg);
         width: 135%;
       }
       #About .midtext{
-        margin : 80px;
+        margin : 80px auto;
       }
       #About .abouttext{
         margin-top: 12.5%;
@@ -510,3 +433,191 @@ font-size: 1rem;
       #contact .btn {
         margin-top: 15px;
       }
+
+@media (max-width: 1440px){
+
+  #About img{
+    width: 120%;
+  }
+  #About .abouttext h1 {
+    font-size: 2.5rem;
+  }
+  #About .abouttext h3 {
+    font-size: 1.5rem;
+  }
+  #About .midtext {
+    margin : 60px auto;
+    font-size: 1.3rem;
+  }
+  #About .abouttext {
+    margin-top: 8.5%;
+  }
+
+  #About h1{
+    margin-bottom: 50px;
+  }
+
+  #whyus h1{
+    font-weight: normal;
+  }
+
+  #whyus img{
+    width: 100px;
+    height: 100px;
+    margin: 35px auto;
+  }
+
+  #whyus h4{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  #whyus h3{
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+  .testimonials-text{
+    font-size:1.3rem;
+
+  }
+  .carousel-item{
+    padding: 0 7%;
+    margin: 0;
+
+  }
+  .carousel{
+    margin : 0;
+    padding: 0;
+  }
+  #testimonials{
+    padding: 0;
+    margin: 0;
+  }
+  .carousel-control-prev{
+    margin-right: 150px;
+  }
+  .testimonials-img{
+    width: 2%;
+    border-radius: 100%;
+    margin: 15px;
+  }
+
+  #howtoconact h1 {
+    margin-bottom: 50px;
+  }
+
+  #howtocontact h5 {
+    margin-top: 0;
+  }
+
+}
+
+
+@media (max-width: 1024px){
+  header{
+    padding: 12px 20px;
+  }
+
+  section{
+    padding: 100px 20px;
+  }
+
+  .home .media-icons{
+    right: 15px;
+  }
+
+  header .navigation{
+    display: none;
+  }
+
+  header .navigation.active{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  header .navigation .navigation-items a{
+    color: #222;
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  header .navigation .navigation-items a:before{
+    background: #222;
+    height: 5px;
+  }
+
+  header .navigation.active .navigation-items{
+    background: #fff;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+
+  .menu-btn{
+    background: url(menu.png)no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn.active{
+    z-index: 999;
+    background: url(close.png)no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: 0.3s ease;
+  }
+
+  #About{
+  }
+
+  #About .abouttext {
+  }
+}
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 560px){
+  .home .content h1{
+    font-size: 3em;
+    line-height: 60px;
+  }
+  #howtoconact .subimg{
+    display: none;
+  }
+  #howtoconact  .H{
+    width: 105%;
+    margin-bottom:50px;
+  }
+
+  #About .mainimg {
+    display: none;
+  }
+  #About .subimg{
+    display: none;
+  }
+  #About .H {
+    width: 105%;
+    margin-bottom:50px;
+  }
+
+
+
+
+}
